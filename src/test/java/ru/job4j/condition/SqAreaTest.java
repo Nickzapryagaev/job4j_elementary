@@ -34,4 +34,5 @@ public class SqAreaTest {
         float eps = 0.01F;
         Assert.assertEquals(in, out, eps);
     }
+
 }
