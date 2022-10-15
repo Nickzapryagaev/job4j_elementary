@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SqAreaTest {
 
     @Test
-    public void square() {
+    public void whenP6K2Square2() {
         double p = 6;
         double k = 2;
         double in = SqArea.square(p, k);
@@ -16,7 +16,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void square2() {
+    public void whenP8K3Square3() {
         double p = 8;
         double k = 3;
         double in = SqArea.square(p, k);
@@ -26,7 +26,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void square3() {
+    public void whenP9K4Square3dot24() {
         double p = 9;
         double k = 4;
         double in = SqArea.square(p, k);
