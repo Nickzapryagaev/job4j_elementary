@@ -7,31 +7,28 @@ public class SqAreaTest {
 
     @Test
     public void whenP6K2Square2() {
-        double p = 6;
+        int expected = 2;
+        int p = 6;
         double k = 2;
-        double in = SqArea.square(p, k);
-        double out = 2;
-        float eps = 0.01F;
-        Assert.assertEquals(in, out, eps);
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void whenP8K3Square3() {
-        double p = 8;
+        int expected = 3;
+        int p = 8;
         double k = 3;
-        double in = SqArea.square(p, k);
-        double out = 3;
-        float eps = 0.01F;
-        Assert.assertEquals(in, out, eps);
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void whenP9K4Square3dot24() {
-        double p = 9;
+        float expected = 3.24f;
+        int p = 9;
         double k = 4;
-        double in = SqArea.square(p, k);
-        double out = 3.24;
-        float eps = 0.01F;
-        Assert.assertEquals(in, out, eps);
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
     }
 }
