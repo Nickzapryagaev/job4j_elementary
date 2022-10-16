@@ -40,4 +40,5 @@ public class PointTest {
         float eps = 0.01F;
         Assert.assertEquals(expected, out, eps);
     }
+
 }
