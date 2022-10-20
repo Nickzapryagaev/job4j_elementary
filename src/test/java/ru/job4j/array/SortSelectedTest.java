@@ -14,7 +14,7 @@ public class SortSelectedTest {
 
     @Test
     public void whenSort3SizeArray() {
-        int[] data = new int[] {15,6, 20};
+        int[] data = new int[] {15, 6, 20};
         int[] result = SortSelected.sort(data);
         int[] expected = new int[] {6, 15, 20};
         assertThat(result).containsExactly(expected);
@@ -22,7 +22,7 @@ public class SortSelectedTest {
 
     @Test
     public void whenSort5SizeArray() {
-        int[] data = new int[] {6,1,2,20,8};
+        int[] data = new int[] {6, 1, 2, 20, 8};
         int[] result = SortSelected.sort(data);
         int[] expected = new int[] {1, 2, 6, 8, 20};
         assertThat(result).containsExactly(expected);
