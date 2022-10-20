@@ -8,5 +8,4 @@ public class RollBackArray {
         }
         return result;
     }
-
 }
