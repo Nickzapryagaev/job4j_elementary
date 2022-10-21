@@ -15,12 +15,20 @@ public class MatrixCheck {
 
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
-        for (int index = 0; index < board.length; index++) {
-            if (board[index][column] != 'X') {
+        for (char[] chars : board) {
+            if (chars[column] != 'X') {
                 result = false;
                 break;
             }
         }
         return result;
+    }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < board.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
     }
 }
