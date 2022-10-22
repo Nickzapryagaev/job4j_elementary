@@ -18,3 +18,4 @@ target
 
 out
 *.log
+/src/main/java/ru/job4j/mytest/
