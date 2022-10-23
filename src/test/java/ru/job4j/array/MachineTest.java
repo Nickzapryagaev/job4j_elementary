@@ -39,4 +39,13 @@ public class MachineTest {
         int[] expected = {10, 5, 2, 1};
         assertThat(result).containsExactly(expected);
     }
+
+    @Test
+    public void whenMoney20Price17() {
+        int money = 20;
+        int price = 17;
+        int[] result = Machine.change(money, price);
+        int[] expected = {2, 1};
+        assertThat(result).containsExactly(expected);
+    }
 }
