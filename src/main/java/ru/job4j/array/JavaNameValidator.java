@@ -31,3 +31,4 @@ public class JavaNameValidator {
         return code > 96 && code < 123;
     }
 }
+
