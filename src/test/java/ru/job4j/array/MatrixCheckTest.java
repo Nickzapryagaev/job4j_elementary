@@ -127,4 +127,17 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         assertThat(result).isTrue();
     }
+
+    @Test
+    public void whenDataVMonoByTrueThenTrue() {
+        char[][] input = {
+                {'X', ' ', ' ', ' ', ' '},
+                {'X', ' ', ' ', ' ', ' '},
+                {'X', 'X', ' ', 'X', 'X'},
+                {'X', ' ', 'X', ' ', ' '},
+                {'X', ' ', 'X', ' ', ' '},
+        };
+        boolean result = MatrixCheck.isWin(input);
+        assertThat(result).isTrue();
+    }
 }
